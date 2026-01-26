@@ -1,27 +1,31 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import foodie from '../src/assets/foodiemock.png';
+import bulletin from '../src/assets/bulletinmock.png';
+import forever from '../src/assets/forevermock.png';
+import nsstudio from '../src/assets/nsstudio.png'
 
 const Works: React.FC = () => {
   const projects = [
     {
       title: 'FOODIE',
       year: '2024',
-      image: '/assets/foodiemock.png',
+      image: foodie,
     },
     {
       title: 'BULLETIN(NEWS)',
       year: '2023',
-      image: '/assets/bulletinmock.png',
+      image: bulletin,
     },
     {
       title: 'FOREVER',
       year: '2023',
-      image: '/assets/forevermock.png',
+      image: forever,
     },
     {
       title: 'NS STUDIO',
       year: '2025',
-      image: '/assets/nsstudio.png',
+      image: nsstudio,
     },
   ];
 
