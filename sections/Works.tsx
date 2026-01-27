@@ -11,21 +11,25 @@ const Works: React.FC = () => {
       title: 'FOODIE',
       year: '2024',
       image: foodie,
+      link: 'https://foodiepiee.netlify.app/', // Replace with actual link
     },
     {
       title: 'BULLETIN(NEWS)',
       year: '2023',
       image: bulletin,
+      link: 'https://bulletin-news-4s4o.vercel.app/', // Replace with actual link
     },
     {
       title: 'FOREVER',
       year: '2023',
       image: forever,
+      link: 'https://foreverbynazam.netlify.app/', // Replace with actual link
     },
     {
       title: 'NS STUDIO',
       year: '2025',
       image: nsstudio,
+      link: 'https://example.com/nsstudio', // Replace with actual link
     },
   ];
 
@@ -59,16 +63,18 @@ const Works: React.FC = () => {
               key={`${project.title}-${idx}`}
               className="flex-shrink-0 w-[260px] md:w-[450px] group interactive accent-hover"
             >
-              <div className="relative overflow-hidden rounded-2xl border border-white/10 mb-6 bg-neutral-900">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" 
-                />
-                <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
-                  <span className="mono text-xs uppercase tracking-widest text-white border border-white/20 px-6 py-2 rounded-full backdrop-blur-sm">Visit</span>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <div className="relative overflow-hidden rounded-2xl border border-white/10 mb-6 bg-neutral-900">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" 
+                  />
+                  <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                    <span className="mono text-xs uppercase tracking-widest text-white border border-white/20 px-6 py-2 rounded-full backdrop-blur-sm">Visit</span>
+                  </div>
                 </div>
-              </div>
+              </a>
               <div className="flex justify-between items-start px-2">
                 <div>
                   <h3 className="text-lg md:text-xl font-bold text-white group-hover:text-teal-400 transition-colors uppercase tracking-tight">{project.title}</h3>

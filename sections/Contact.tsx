@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 
@@ -60,13 +59,13 @@ const Contact: React.FC = () => {
               <div className="grid grid-cols-2 gap-8">
                 <div>
                   <p className="mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Location</p>
-                  <p className="text-white/60">London / Worldwide</p>
+                  <p className="text-white/60">Lucknow,India / Worldwide</p>
                 </div>
                 <div>
                   <p className="mono text-[10px] uppercase tracking-widest text-white/30 mb-4">Proof of Work</p>
                   <div className="flex flex-col space-y-2">
                     <a href="#works" className="text-white/60 hover:text-teal-400 transition-colors interactive">Case Studies</a>
-                    <a href="https://github.com/nazamshiraz" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-teal-400 transition-colors interactive">Open Source</a>
+                    <a href="https://github.com/nzmshrxz" target="_blank" rel="noopener noreferrer" className="text-white/60 hover:text-teal-400 transition-colors interactive">Open Source</a>
                   </div>
                 </div>
               </div>
@@ -78,20 +77,47 @@ const Contact: React.FC = () => {
             whileInView={{ opacity: 1, x: 0 }}
             className="bg-neutral-900/30 p-8 md:p-12 border border-white/5 rounded-3xl"
           >
-            <form className="space-y-12" onSubmit={(e) => e.preventDefault()}>
+            <form
+              className="space-y-12"
+              action="https://formspree.io/f/mykwbqbr" // Replace 'your-form-id' with your actual Formspree form ID
+              method="POST"
+            >
               <div className="relative group">
-                <input type="text" className="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-teal-400 transition-colors text-white peer" required />
-                <label className="absolute left-0 top-4 text-white/20 mono text-xs uppercase transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-teal-400 peer-valid:-top-4">Name</label>
+                <input
+                  type="text"
+                  name="name"
+                  className="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-teal-400 transition-colors text-white peer"
+                  required
+                />
+                <label className="absolute left-0 top-4 text-white/20 mono text-xs uppercase transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-teal-400 peer-valid:-top-4">
+                  Name
+                </label>
               </div>
               <div className="relative group">
-                <input type="email" className="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-teal-400 transition-colors text-white peer" required />
-                <label className="absolute left-0 top-4 text-white/20 mono text-xs uppercase transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-teal-400 peer-valid:-top-4">Email</label>
+                <input
+                  type="email"
+                  name="email"
+                  className="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-teal-400 transition-colors text-white peer"
+                  required
+                />
+                <label className="absolute left-0 top-4 text-white/20 mono text-xs uppercase transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-teal-400 peer-valid:-top-4">
+                  Email
+                </label>
               </div>
               <div className="relative group">
-                <textarea className="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-teal-400 transition-colors text-white peer h-32 resize-none" required />
-                <label className="absolute left-0 top-4 text-white/20 mono text-xs uppercase transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-teal-400 peer-valid:-top-4">Briefly tell me about your project</label>
+                <textarea
+                  name="message"
+                  className="w-full bg-transparent border-b border-white/10 py-4 outline-none focus:border-teal-400 transition-colors text-white peer h-32 resize-none"
+                  required
+                ></textarea>
+                <label className="absolute left-0 top-4 text-white/20 mono text-xs uppercase transition-all pointer-events-none peer-focus:-top-4 peer-focus:text-teal-400 peer-valid:-top-4">
+                  Briefly tell me about your project
+                </label>
               </div>
-              <button className="w-full py-6 bg-white text-black font-bold uppercase tracking-[0.2em] rounded-full interactive hover:bg-teal-400 transition-colors">
+              <button
+                type="submit"
+                className="w-full py-6 bg-white text-black font-bold uppercase tracking-[0.2em] rounded-full interactive hover:bg-teal-400 transition-colors"
+              >
                 Initialize Connection
               </button>
             </form>
@@ -101,7 +127,7 @@ const Contact: React.FC = () => {
 
       <div className="mt-32 border-t border-white/5 pt-12 relative">
         <div className="flex flex-col md:flex-row justify-between items-center space-y-8 md:space-y-0 text-center md:text-left">
-          <div className="mono text-[10px] text-white/20 uppercase tracking-widest">© 2024 NS. STUDIO</div>
+          <div className="mono text-[10px] text-white/20 uppercase tracking-widest">© 2024 Nazam shiraz</div>
           
           {/* Back to Top */}
           <button 
@@ -113,9 +139,9 @@ const Contact: React.FC = () => {
           </button>
 
           <div className="flex space-x-12 mono text-[10px] text-white/40">
-             <a href="#" className="hover:text-teal-400 interactive transition-colors uppercase">GITHUB</a>
-             <a href="#" className="hover:text-teal-400 interactive transition-colors uppercase">LINKEDIN</a>
-             <a href="#" className="hover:text-teal-400 interactive transition-colors uppercase">TWITTER</a>
+             <a href="https://github.com/nzmshrxz" target="_blank" className="hover:text-teal-400 interactive transition-colors uppercase">GITHUB</a>
+             <a href="https://in.linkedin.com/in/nazam-shiraz-76081425a" target="_blank" className="hover:text-teal-400 interactive transition-colors uppercase">LINKEDIN</a>
+             <a href="https://x.com/nazamshiraz_/" target="_blank" className="hover:text-teal-400 interactive transition-colors uppercase">TWITTER</a>
           </div>
         </div>
       </div>

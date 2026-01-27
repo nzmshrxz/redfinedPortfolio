@@ -48,6 +48,7 @@ const Hero: React.FC = () => {
             <p className="text-white/60 text-sm md:text-lg leading-relaxed">
               Full-Stack Engineer crafting high-performance digital narratives. 
               Bridging the profound gap between <span className="text-white font-bold">Complex Logic</span> and <span className="text-white font-bold">Artistic Interface</span>.
+              <br /><span className="text-md">Visit Studio - <a className="underline" href="#">nsstudio.space</a></span>
             </p>
           </div>
           <div className="h-px w-16 md:w-24 bg-white/20 hidden md:block" />
