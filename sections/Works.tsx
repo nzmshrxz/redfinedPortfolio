@@ -29,7 +29,7 @@ const Works: React.FC = () => {
       title: 'NS STUDIO',
       year: '2025',
       image: nsstudio,
-      link: 'https://example.com/nsstudio', // Replace with actual link
+      link: 'https://nsstudio.space/', // Replace with actual link
     },
   ];
 
@@ -44,7 +44,7 @@ const Works: React.FC = () => {
       </div>
 
       <div className="relative flex">
-        <motion.div 
+        <motion.div
           className="flex space-x-6 md:space-x-8 px-4"
           initial={{ x: 0 }}
           animate={{ x: "-50%" }}
@@ -59,16 +59,16 @@ const Works: React.FC = () => {
           whileHover={{ animationPlayState: "paused" }}
         >
           {displayProjects.map((project, idx) => (
-            <motion.div 
+            <motion.div
               key={`${project.title}-${idx}`}
               className="flex-shrink-0 w-[260px] md:w-[450px] group interactive accent-hover"
             >
               <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <div className="relative overflow-hidden rounded-2xl border border-white/10 mb-6 bg-neutral-900">
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
-                    className="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110" 
+                  <img
+                    src={project.image}
+                    alt={project.title}
+                    className="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-700 group-hover:scale-110"
                   />
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                     <span className="mono text-xs uppercase tracking-widest text-white border border-white/20 px-6 py-2 rounded-full backdrop-blur-sm">Visit</span>
