@@ -52,10 +52,10 @@ const TiltCard = ({ color, category, name, exp }: { color: string, category: str
 
 const Toolkit: React.FC = () => {
   const tools = [
-    { name: 'TypeScript', category: 'Core', exp: '5y', color: 'bg-blue-500' },
+    { name: 'JavaScript', category: 'Core', exp: '5y', color: 'bg-blue-500' },
     { name: 'React', category: 'Frontend', exp: '4y', color: 'bg-cyan-500' },
     { name: 'Node.js', category: 'Backend', exp: '4y', color: 'bg-green-500' },
-    { name: 'PostgreSQL', category: 'Data', exp: '3y', color: 'bg-indigo-500' },
+    { name: 'MongoDB', category: 'Data', exp: '3y', color: 'bg-indigo-500' },
     { name: 'Next.js', category: 'Frontend', exp: '3y', color: 'bg-white' },
     { name: 'Docker', category: 'DevOps', exp: '2y', color: 'bg-blue-600' },
     { name: 'AWS', category: 'Cloud', exp: '2y', color: 'bg-orange-500' },
